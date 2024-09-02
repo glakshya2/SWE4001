@@ -1,18 +1,13 @@
 symbol table
-1. create
-2. insert
-3. modify
-4. search
-5. display
 
-A = 10
-B = 20
-C = 30
-B1 = A + 5
+alpha resw 5
+beta ....
+
+table:
+
+symbol  address
+alpha   1000
+beta    1015
 
 
-Variable	Value
-A		10
-B		20
-C		30
-B1		35
+beta = 1000 + 3 * 5

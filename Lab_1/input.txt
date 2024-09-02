@@ -1,4 +1,4 @@
-A = 10
-Temp = 20
-A1 = 30
-B1 = 50
+alpha resw 5
+beta resw 3
+charlie resw 4
+delta resw 6
