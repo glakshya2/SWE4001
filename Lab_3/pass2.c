@@ -27,22 +27,6 @@ struct Intermediate {
     int objcode;
 };
 
-struct Header {
-    char name[MAX_LABEL_LENGTH];
-    int startingAddress;
-    int programLength;
-};
-
-struct Text {
-    int startingAddress;
-    int length;
-
-};
-
-struct End {
-    int startingAddress;
-};
-
 void split(char* str, char delimiter, char tokens[4][MAX_LINE_LENGTH]) {
     int tokenIndex = 0;
     int charIndex = 0;
@@ -108,11 +92,6 @@ int main() {
 
     struct Intermediate tokenizedProgram[100];
     int tokenizedProgramIndex = 0;
-
-    struct Header h_record;
-    h_record.programLength = 0x0000;
-    struct Text t_record[100];
-    struct End e_record;
 
     char line[MAX_LINE_LENGTH], label[MAX_LABEL_LENGTH];
     char tokens[4][MAX_LINE_LENGTH];
