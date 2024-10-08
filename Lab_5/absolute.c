@@ -29,6 +29,7 @@ int main(void) {
     int startAddress = 0, currentAddress = 0;
     char line[MAX_LINE_LENGTH];
     char tokens[15][MAX_LINE_LENGTH];
+    char printLIne[MAX_LINE_LENGTH] = "";
     while(fgets(line, MAX_LINE_LENGTH, input)) {
         line[strlen(line) - 1] = '\0';
         split(line, '\t', tokens);
